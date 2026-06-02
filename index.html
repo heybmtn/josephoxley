@@ -1,11 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joseph Oxley | Exit Strategy</title>
 
-<meta name="description" content="Helping families quit the 9-5 and move abroad. Learn the strategy behind creating a life on your own terms.">
+<title>Joseph Oxley | Live Life On Your Terms</title>
+
+<meta name="description" content="Helping families escape the 9-5 and build a life abroad. Practical advice, real stories and proven strategies for creating more freedom.">
+
+<meta name="theme-color" content="#ffffff">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +19,7 @@
     --bg:#ffffff;
     --text:#000000;
     --muted:#666666;
-    --border:#e7e7e7;
+    --border:#e8e8e8;
     --max-width:1200px;
 }
 
@@ -30,104 +34,101 @@ html{
 }
 
 body{
-    font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
-    background:var(--bg);
-    color:var(--text);
+    background:#fff;
+    color:#000;
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
     line-height:1.5;
     -webkit-font-smoothing:antialiased;
 }
 
-.container{
-    width:min(92%, var(--max-width));
-    margin:auto;
-}
-
-section{
-    padding:100px 0;
-}
-
-h1,h2,h3{
-    font-weight:800;
-    letter-spacing:-0.04em;
-}
-
-p{
-    color:var(--muted);
+img{
+    max-width:100%;
+    display:block;
 }
 
 a{
-    text-decoration:none;
     color:inherit;
+    text-decoration:none;
 }
 
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    background:#000;
-    color:#fff;
-    padding:18px 32px;
-    font-weight:600;
-    transition:.2s;
+.container{
+    width:min(92%,1200px);
+    margin:auto;
 }
 
-.btn:hover{
-    opacity:.85;
-}
-
-.nav{
-    padding:24px 0;
+header{
+    padding:28px 0;
     border-bottom:1px solid var(--border);
 }
 
-.nav-inner{
+.nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
 .logo{
-    font-size:.95rem;
+    font-size:.9rem;
     font-weight:700;
     letter-spacing:.15em;
 }
 
-.hero{
-    min-height:90vh;
+.nav-links{
     display:flex;
-    align-items:center;
+    gap:24px;
+}
+
+.hero{
+    padding:60px 0 80px;
 }
 
 .hero-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1.1fr .9fr;
     gap:80px;
     align-items:center;
 }
 
 .kicker{
     font-size:.85rem;
-    text-transform:uppercase;
     letter-spacing:.2em;
-    margin-bottom:20px;
-    color:#666;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:24px;
 }
 
 .hero h1{
-    font-size:clamp(4rem,10vw,8rem);
+    font-size:clamp(3.5rem,10vw,7rem);
     line-height:.9;
-    margin-bottom:30px;
+    letter-spacing:-.06em;
+    margin-bottom:28px;
 }
 
 .hero p{
-    font-size:1.25rem;
-    max-width:550px;
-    margin-bottom:40px;
+    font-size:1.2rem;
+    max-width:600px;
+    color:var(--muted);
+    margin-bottom:36px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px 32px;
+    background:#000;
+    color:#fff;
+    font-weight:600;
+}
+
+.followers{
+    margin-top:18px;
+    color:var(--muted);
+    font-size:.95rem;
 }
 
 .hero-image{
     aspect-ratio:4/5;
-    background:#f5f5f5;
     border:1px solid var(--border);
     overflow:hidden;
 }
@@ -138,98 +139,78 @@ a{
     object-fit:cover;
 }
 
-.stats{
+section{
+    padding:90px 0;
     border-top:1px solid var(--border);
-    border-bottom:1px solid var(--border);
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-}
-
-.stat{
-    padding:50px;
-    text-align:center;
-}
-
-.stat:not(:last-child){
-    border-right:1px solid var(--border);
-}
-
-.stat h3{
-    font-size:3rem;
-    margin-bottom:10px;
 }
 
 .section-title{
-    font-size:clamp(2.5rem,5vw,4.5rem);
-    margin-bottom:30px;
-    max-width:900px;
+    font-size:clamp(2.4rem,5vw,4.5rem);
+    line-height:1;
+    letter-spacing:-.05em;
+    margin-bottom:24px;
 }
 
 .section-intro{
-    font-size:1.2rem;
     max-width:700px;
-    margin-bottom:70px;
+    color:var(--muted);
+    font-size:1.1rem;
 }
 
-.pillars{
+.story-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:40px;
+    gap:24px;
+    margin-top:60px;
 }
 
-.pillar{
+.card{
     border:1px solid var(--border);
-    padding:40px;
+    padding:32px;
 }
 
-.pillar-number{
+.card-number{
     font-size:.9rem;
-    margin-bottom:20px;
+    margin-bottom:16px;
     font-weight:700;
 }
 
-.pillar h3{
-    margin-bottom:15px;
-    font-size:1.7rem;
+.card h3{
+    font-size:1.5rem;
+    margin-bottom:12px;
 }
 
 .offer{
     background:#fafafa;
-    border-top:1px solid var(--border);
-    border-bottom:1px solid var(--border);
 }
 
-.offer-card{
-    max-width:850px;
-}
-
-.offer-card h2{
+.offer h2{
     font-size:clamp(3rem,6vw,5rem);
-    margin-bottom:20px;
+    line-height:1;
+    letter-spacing:-.05em;
+    margin-bottom:24px;
 }
 
-.testimonials-grid{
+.checklist{
+    margin:32px 0;
+    display:grid;
+    gap:12px;
+}
+
+.testimonials{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:24px;
+    margin-top:50px;
 }
 
 .testimonial{
     border:1px solid var(--border);
-    padding:35px;
+    padding:32px;
 }
 
 .stars{
-    margin-bottom:20px;
-    font-size:1.2rem;
-}
-
-.testimonial strong{
-    display:block;
-    margin-top:20px;
+    margin-bottom:16px;
 }
 
 .newsletter{
@@ -238,367 +219,359 @@ a{
 }
 
 .newsletter p{
-    color:#ccc;
+    color:#cfcfcf;
 }
 
-.newsletter-wrap{
-    max-width:700px;
-}
-
-.newsletter-form{
+.form{
     display:flex;
     gap:12px;
-    margin-top:30px;
+    margin-top:32px;
 }
 
-.newsletter-form input{
+.form input{
     flex:1;
     padding:18px;
     border:none;
     font-size:16px;
 }
 
-.newsletter-form button{
+.form button{
     border:none;
-    cursor:pointer;
-    padding:18px 28px;
     background:#fff;
     color:#000;
+    padding:18px 28px;
     font-weight:700;
+    cursor:pointer;
 }
 
 .resources{
     display:grid;
     gap:16px;
+    margin-top:40px;
 }
 
 .resource{
     border:1px solid var(--border);
-    padding:28px;
+    padding:24px;
     display:flex;
     justify-content:space-between;
-    transition:.2s;
 }
 
 .resource:hover{
     border-color:#000;
 }
 
-.instagram-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:12px;
-}
-
-.insta-item{
-    aspect-ratio:1;
-    background:#f5f5f5;
-    border:1px solid var(--border);
-}
-
-.footer{
-    padding:60px 0;
+footer{
+    padding:50px 0;
     border-top:1px solid var(--border);
     text-align:center;
 }
 
-.sticky-cta{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    z-index:1000;
-}
-
 @media(max-width:900px){
+
+    .hero-grid,
+    .story-grid,
+    .testimonials{
+        grid-template-columns:1fr;
+    }
+
+    .hero-image{
+        order:-1;
+    }
+
+    .hero{
+        padding-top:20px;
+    }
+
+    .form{
+        flex-direction:column;
+    }
+
+    .form input,
+    .form button{
+        width:100%;
+    }
 
     section{
         padding:70px 0;
     }
+}
 
-    .hero{
-        min-height:auto;
-        padding-top:40px;
+@media(max-width:480px){
+
+    .nav{
+        flex-direction:column;
+        gap:14px;
     }
 
-    .hero-grid,
-    .pillars,
-    .testimonials-grid,
-    .stats-grid{
-        grid-template-columns:1fr;
-    }
-
-    .stat{
-        border-right:none !important;
-        border-bottom:1px solid var(--border);
+    .nav-links{
+        gap:16px;
     }
 
     .hero h1{
-        font-size:4rem;
+        font-size:3rem;
     }
 
-    .newsletter-form{
-        flex-direction:column;
+    .hero p{
+        font-size:1rem;
     }
 
-    .instagram-grid{
-        grid-template-columns:repeat(2,1fr);
+    .section-title{
+        font-size:2rem;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    section{
+        padding:60px 0;
     }
 }
 </style>
 </head>
 <body>
 
-<div class="sticky-cta">
-    <a href="#newsletter" class="btn">
-        Get The Exit Strategy
-    </a>
-</div>
+<header>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">JOSEPH OXLEY</div>
 
-<header class="nav">
-    <div class="container nav-inner">
-        <div class="logo">JOSEPH OXLEY</div>
-        <a href="https://instagram.com/josephoxley.1" target="_blank">
-            Instagram
-        </a>
+            <div class="nav-links">
+                <a href="#story">Story</a>
+                <a href="#strategy">Strategy</a>
+                <a href="#newsletter">Newsletter</a>
+            </div>
+        </div>
     </div>
 </header>
 
 <section class="hero">
-    <div class="container">
-        <div class="hero-grid">
 
-            <div>
-                <div class="kicker">
-                    LIVE LIFE ON YOUR TERMS
-                </div>
+<div class="container">
 
-                <h1>
-                    QUIT THE 9-5.<br>
-                    MOVE ABROAD.
-                </h1>
+<div class="hero-grid">
 
-                <p>
-                    Helping families create more freedom through location-independent income, relocation strategies and real-world experience.
-                </p>
+<div>
 
-                <a href="#newsletter" class="btn">
-                    Get The Exit Strategy →
-                </a>
-            </div>
+<div class="kicker">
+LIVE LIFE ON YOUR TERMS
+</div>
 
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43?w=1200&auto=format&fit=crop&q=80" alt="">
-            </div>
+<h1>
+ESCAPE THE 9-5.<br>
+MOVE ABROAD.
+</h1>
 
-        </div>
-    </div>
+<p>
+Practical advice, real stories and proven strategies for families looking to create more freedom, income and options.
+</p>
+
+<a href="#newsletter" class="btn">
+Get The Exit Strategy
+</a>
+
+<div class="followers">
+Join 8,400+ people following the journey.
+</div>
+
+</div>
+
+<div class="hero-image">
+<img src="/assets/joseph.jpg" alt="Joseph Oxley">
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="stats">
-    <div class="stats-grid">
+<section id="story">
 
-        <div class="stat">
-            <h3>8.4k+</h3>
-            <p>Followers</p>
-        </div>
+<div class="container">
 
-        <div class="stat">
-            <h3>55+</h3>
-            <p>Posts Shared</p>
-        </div>
+<h2 class="section-title">
+I built a life on my own terms.
+</h2>
 
-        <div class="stat">
-            <h3>100%</h3>
-            <p>Freedom Focused</p>
-        </div>
+<p class="section-intro">
+I left the traditional path and created a life focused on freedom, family and experiences. Now I share everything I've learned to help other families do the same.
+</p>
 
-    </div>
+<div class="story-grid">
+
+<div class="card">
+<div class="card-number">01</div>
+<h3>Leave The 9-5</h3>
+<p>Create income streams that aren't tied to traditional employment.</p>
+</div>
+
+<div class="card">
+<div class="card-number">02</div>
+<h3>Move Abroad</h3>
+<p>Learn practical relocation strategies and destination insights.</p>
+</div>
+
+<div class="card">
+<div class="card-number">03</div>
+<h3>Live Freely</h3>
+<p>Design a lifestyle centred around family, freedom and flexibility.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="offer" id="strategy">
+
+<div class="container">
+
+<h2>
+The Exit Strategy
+</h2>
+
+<p class="section-intro">
+A practical roadmap for families wanting more freedom and more options.
+</p>
+
+<div class="checklist">
+<div>✓ Income & business ideas</div>
+<div>✓ Relocation guidance</div>
+<div>✓ Family-first planning</div>
+<div>✓ Real-world lessons</div>
+</div>
+
+<a href="#newsletter" class="btn">
+Start Here
+</a>
+
+</div>
+
 </section>
 
 <section>
-    <div class="container">
 
-        <h2 class="section-title">
-            I left the UK and built a life on my own terms.
-        </h2>
+<div class="container">
 
-        <p class="section-intro">
-            Now I help other families do the same through practical strategies, honest lessons and real-world examples from people who've already made the move.
-        </p>
+<h2 class="section-title">
+Success Stories
+</h2>
 
-        <div class="pillars">
+<div class="testimonials">
 
-            <div class="pillar">
-                <div class="pillar-number">01</div>
-                <h3>Leave The 9-5</h3>
-                <p>Create income streams that aren't tied to traditional employment.</p>
-            </div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>
+We finally made the move we'd been talking about for years.
+</p>
+</div>
 
-            <div class="pillar">
-                <div class="pillar-number">02</div>
-                <h3>Move Abroad</h3>
-                <p>Discover destinations, relocation options and practical next steps.</p>
-            </div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>
+The clarity and confidence this gave us changed everything.
+</p>
+</div>
 
-            <div class="pillar">
-                <div class="pillar-number">03</div>
-                <h3>Live On Your Terms</h3>
-                <p>Build a lifestyle around freedom, family and experiences.</p>
-            </div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>
+Our family now has the freedom we'd always wanted.
+</p>
+</div>
 
-        </div>
+</div>
 
-    </div>
-</section>
+</div>
 
-<section class="offer">
-    <div class="container">
-
-        <div class="offer-card">
-            <h2>
-                The Exit Strategy
-            </h2>
-
-            <p class="section-intro">
-                A practical roadmap for families looking to escape the 9-5 and create a location-independent life.
-            </p>
-
-            <a href="#newsletter" class="btn">
-                Learn More →
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<section>
-    <div class="container">
-
-        <h2 class="section-title">
-            Success Stories
-        </h2>
-
-        <div class="testimonials-grid">
-
-            <div class="testimonial">
-                <div class="stars">★★★★★</div>
-                <p>
-                    The clarity and confidence this gave us was incredible.
-                </p>
-                <strong>Sarah & Tom</strong>
-            </div>
-
-            <div class="testimonial">
-                <div class="stars">★★★★★</div>
-                <p>
-                    Eight months later we were living in Thailand.
-                </p>
-                <strong>The Wilson Family</strong>
-            </div>
-
-            <div class="testimonial">
-                <div class="stars">★★★★★</div>
-                <p>
-                    We finally stopped dreaming about freedom and started living it.
-                </p>
-                <strong>James & Claire</strong>
-            </div>
-
-        </div>
-
-    </div>
 </section>
 
 <section class="newsletter" id="newsletter">
-    <div class="container">
 
-        <div class="newsletter-wrap">
+<div class="container">
 
-            <h2 class="section-title">
-                The Exit Letter
-            </h2>
+<h2 class="section-title">
+The Exit Letter
+</h2>
 
-            <p>
-                Every week you'll receive practical insights, relocation lessons, business ideas and real stories from families creating freedom.
-            </p>
+<p>
+One useful email each week covering moving abroad, income opportunities, family freedom and practical lessons.
+</p>
 
-            <form class="newsletter-form">
+<form class="form">
 
-                <input
-                    type="email"
-                    placeholder="Enter your email"
-                    required
-                >
+<input
+type="email"
+placeholder="Your email address"
+required
+>
 
-                <button type="submit">
-                    Join Free
-                </button>
+<button type="submit">
+Join Free
+</button>
 
-            </form>
+</form>
 
-        </div>
+</div>
 
-    </div>
 </section>
 
 <section>
-    <div class="container">
 
-        <h2 class="section-title">
-            Resources
-        </h2>
+<div class="container">
 
-        <div class="resources">
+<h2 class="section-title">
+Latest Content
+</h2>
 
-            <a href="#" class="resource">
-                <span>Exit Strategy</span>
-                <span>→</span>
-            </a>
+<div class="resources">
 
-            <a href="#" class="resource">
-                <span>Success Stories</span>
-                <span>→</span>
-            </a>
+<a href="#" class="resource">
+<span>How We Left The UK</span>
+<span>→</span>
+</a>
 
-            <a href="#" class="resource">
-                <span>Recommended Tools</span>
-                <span>→</span>
-            </a>
+<a href="#" class="resource">
+<span>Moving To Bali</span>
+<span>→</span>
+</a>
 
-            <a href="https://instagram.com/josephoxley.1" class="resource">
-                <span>Instagram</span>
-                <span>→</span>
-            </a>
+<a href="#" class="resource">
+<span>Building Income Online</span>
+<span>→</span>
+</a>
 
-        </div>
+<a href="#" class="resource">
+<span>Thailand With Kids</span>
+<span>→</span>
+</a>
 
-    </div>
+<a href="https://instagram.com/josephoxley.1" class="resource">
+<span>Instagram</span>
+<span>→</span>
+</a>
+
+</div>
+
+</div>
+
 </section>
 
-<section>
-    <div class="container">
+<footer>
 
-        <h2 class="section-title">
-            Follow The Journey
-        </h2>
+<div class="container">
 
-        <div class="instagram-grid">
-            <div class="insta-item"></div>
-            <div class="insta-item"></div>
-            <div class="insta-item"></div>
-            <div class="insta-item"></div>
-            <div class="insta-item"></div>
-            <div class="insta-item"></div>
-        </div>
+<p>
+© 2026 Joseph Oxley · Live Life On Your Terms
+</p>
 
-    </div>
-</section>
+</div>
 
-<footer class="footer">
-    <div class="container">
-        <p>© 2026 Joseph Oxley. Live Life On Your Terms.</p>
-    </div>
 </footer>
 
 </body>
 </html>
+```
